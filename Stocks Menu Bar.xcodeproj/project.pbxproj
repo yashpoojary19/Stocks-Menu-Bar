@@ -11,6 +11,10 @@
 		B6BE9AA128352D8300437BC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AA028352D8300437BC7 /* ContentView.swift */; };
 		B6BE9AA328352D8600437BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BE9AA228352D8600437BC7 /* Assets.xcassets */; };
 		B6BE9AA628352D8600437BC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BE9AA528352D8600437BC7 /* Preview Assets.xcassets */; };
+		B6BE9AAF28352DE000437BC7 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AAE28352DE000437BC7 /* Stock.swift */; };
+		B6BE9AB228352E3000437BC7 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB128352E3000437BC7 /* WebServices.swift */; };
+		B6BE9AB528352F2200437BC7 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB428352F2200437BC7 /* StockListViewModel.swift */; };
+		B6BE9AB828352F6900437BC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB728352F6900437BC7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		B6BE9AA228352D8600437BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6BE9AA528352D8600437BC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B6BE9AA728352D8600437BC7 /* Stocks_Menu_Bar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stocks_Menu_Bar.entitlements; sourceTree = "<group>"; };
+		B6BE9AAE28352DE000437BC7 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		B6BE9AB128352E3000437BC7 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		B6BE9AB428352F2200437BC7 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		B6BE9AB728352F6900437BC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,10 @@
 		B6BE9A9D28352D8300437BC7 /* Stocks Menu Bar */ = {
 			isa = PBXGroup;
 			children = (
+				B6BE9AB628352F5D00437BC7 /* Utils */,
+				B6BE9AB328352F1600437BC7 /* ViewModel */,
+				B6BE9AB028352E1B00437BC7 /* Services */,
+				B6BE9AAD28352DD400437BC7 /* Model */,
 				B6BE9A9E28352D8300437BC7 /* Stocks_Menu_BarApp.swift */,
 				B6BE9AA028352D8300437BC7 /* ContentView.swift */,
 				B6BE9AA228352D8600437BC7 /* Assets.xcassets */,
@@ -67,6 +79,38 @@
 				B6BE9AA528352D8600437BC7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6BE9AAD28352DD400437BC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE9AAE28352DE000437BC7 /* Stock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6BE9AB028352E1B00437BC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE9AB128352E3000437BC7 /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B6BE9AB328352F1600437BC7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE9AB428352F2200437BC7 /* StockListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B6BE9AB628352F5D00437BC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE9AB728352F6900437BC7 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +185,10 @@
 			files = (
 				B6BE9AA128352D8300437BC7 /* ContentView.swift in Sources */,
 				B6BE9A9F28352D8300437BC7 /* Stocks_Menu_BarApp.swift in Sources */,
+				B6BE9AB228352E3000437BC7 /* WebServices.swift in Sources */,
+				B6BE9AAF28352DE000437BC7 /* Stock.swift in Sources */,
+				B6BE9AB528352F2200437BC7 /* StockListViewModel.swift in Sources */,
+				B6BE9AB828352F6900437BC7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

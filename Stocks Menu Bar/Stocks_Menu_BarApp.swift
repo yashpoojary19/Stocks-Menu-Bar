@@ -11,7 +11,7 @@ import SwiftUI
 struct Stocks_Menu_BarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: StockListViewModel())
         }
     }
 }
