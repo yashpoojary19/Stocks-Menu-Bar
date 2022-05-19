@@ -15,6 +15,7 @@
 		B6BE9AB228352E3000437BC7 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB128352E3000437BC7 /* WebServices.swift */; };
 		B6BE9AB528352F2200437BC7 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB428352F2200437BC7 /* StockListViewModel.swift */; };
 		B6BE9AB828352F6900437BC7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9AB728352F6900437BC7 /* Constants.swift */; };
+		B6BE9ABB2836340400437BC7 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BE9ABA2836340400437BC7 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		B6BE9AB128352E3000437BC7 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		B6BE9AB428352F2200437BC7 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
 		B6BE9AB728352F6900437BC7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B6BE9ABA2836340400437BC7 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		B6BE9ABC2836379100437BC7 /* Stocks-Menu-Bar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Stocks-Menu-Bar-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		B6BE9A9D28352D8300437BC7 /* Stocks Menu Bar */ = {
 			isa = PBXGroup;
 			children = (
+				B6BE9ABC2836379100437BC7 /* Stocks-Menu-Bar-Info.plist */,
+				B6BE9AB9283633CA00437BC7 /* Extensions */,
 				B6BE9AB628352F5D00437BC7 /* Utils */,
 				B6BE9AB328352F1600437BC7 /* ViewModel */,
 				B6BE9AB028352E1B00437BC7 /* Services */,
@@ -111,6 +116,14 @@
 				B6BE9AB728352F6900437BC7 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B6BE9AB9283633CA00437BC7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE9ABA2836340400437BC7 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +198,7 @@
 			files = (
 				B6BE9AA128352D8300437BC7 /* ContentView.swift in Sources */,
 				B6BE9A9F28352D8300437BC7 /* Stocks_Menu_BarApp.swift in Sources */,
+				B6BE9ABB2836340400437BC7 /* Double+Extensions.swift in Sources */,
 				B6BE9AB228352E3000437BC7 /* WebServices.swift in Sources */,
 				B6BE9AAF28352DE000437BC7 /* Stock.swift in Sources */,
 				B6BE9AB528352F2200437BC7 /* StockListViewModel.swift in Sources */,
@@ -322,6 +336,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stocks-Menu-Bar-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,6 +364,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Stocks-Menu-Bar-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

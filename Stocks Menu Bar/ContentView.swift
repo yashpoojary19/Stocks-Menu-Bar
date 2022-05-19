@@ -20,7 +20,20 @@ struct ContentView: View {
             Text("Stocks").padding()
             
             List(vm.stocks, id: \.symbol) { stock in
-                Text(stock.symbol)
+                HStack(alignment: .center) {
+                    VStack(alignment: .leading) {
+                        Text(stock.symbol)
+                            .fontWeight(.semibold)
+                        Text(stock.description)
+                            .opacity(0.4)
+                        Divider()
+                        
+                    }
+                    
+                    Spacer()
+                    
+                    Text(stock.price.formatAsCurrency())
+                }
             }.task {
                 await vm.populateStocks()
             }
